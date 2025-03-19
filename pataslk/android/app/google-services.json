@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "253837486153",
+    "project_id": "pataslk-app",
+    "storage_bucket": "pataslk-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:253837486153:android:9573afe7a3139eeb44b798",
+        "android_client_info": {
+          "package_name": "com.example.pataslk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "253837486153-61gpnpmujlr4f4k7hdcq06rdnh24lr7l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pataslk",
+            "certificate_hash": "ab07c05d82bda23d3e673e5449d2b9a3e1e134f1"
+          }
+        },
+        {
+          "client_id": "253837486153-ng186lgjsvu6lgam5otv3akbf51qh1aq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBh-4msJp_Ssp238uPOwjWLtN-ls-SJp0U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "253837486153-ng186lgjsvu6lgam5otv3akbf51qh1aq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "253837486153-38crld2nhq6h5trg8spqrcgbj2gj1u13.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.frontend"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

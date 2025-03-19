@@ -1,0 +1,49 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "pataslk-app",
+          "appId": "1:253837486153:android:9573afe7a3139eeb44b798",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "pataslk-app",
+          "configurations": {
+            "android": "1:253837486153:android:9573afe7a3139eeb44b798",
+            "ios": "1:253837486153:ios:dfd145e89dca845b44b798",
+            "macos": "1:253837486153:ios:dfd145e89dca845b44b798",
+            "web": "1:253837486153:web:9a86c36e2af195ed44b798",
+            "windows": "1:253837486153:web:dd1d83d1c2c1f69b44b798"
+          }
+        }
+      }
+    }
+  },
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "*.local"
+      ]
+    },
+    {
+      "source": "pataslk",
+      "codebase": "pataslk",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "*.local"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+// Apply plugins in the correct order.
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'dev.flutter.flutter-gradle-plugin'
+
+android {
+    namespace "com.example.pataslk"
+    compileSdk flutter.compileSdkVersion
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+        freeCompilerArgs += "-Xskip-metadata-version-check"
+    }
+
+    defaultConfig {
+        applicationId "com.example.pataslk"
+        minSdkVersion 23
+        targetSdk flutter.targetSdkVersion
+        versionCode flutter.versionCode
+        versionName flutter.versionName
+    }
+
+    buildTypes {
+        release {
+            // Simplified release config without signing for now
+            minifyEnabled false
+            shrinkResources false
+        }
+    }
+}
+
+flutter {
+    source "../.."
+}
+
+dependencies {
+    // Import the Firebase Bill of Materials (BoM)
+    implementation platform("com.google.firebase:firebase-bom:33.10.0")
+    // Example Firebase dependency.
+    implementation "com.google.firebase:firebase-analytics"
+    // Add other Firebase dependencies as needed.
+    implementation 'com.google.android.play:integrity:1.1.0'
+    implementation 'com.google.android.gms:play-services-safetynet:18.0.1'
+}
+
+// Apply the Firebase Google Services plugin at the bottom.
+apply plugin: 'com.google.gms.google-services'
